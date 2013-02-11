@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="CustomerDetails"
+     ProductID="{63e12c97-3889-4f9b-9a8d-f21d1c5ebd42}"
+     Version="1.0.0.0"
+     SharePointMinVersion="15.0.0.0"
+>
+  <Properties>
+    <Title>CustomerDetails1</Title>
+    <StartPage>~remoteAppUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+  </Properties>
+
+  <AppPrincipal>
+    <AutoDeployedWebApplication/>
+  </AppPrincipal>
+
+  <AppPrerequisites> 
+    <AppPrerequisite Type="AutoProvisioning" ID="RemoteWebHost" /> 
+  </AppPrerequisites>
+  <AppPermissionRequests>
+    <AppPermissionRequest Scope="http://sharepoint/content/sitecollection/web" Right="FullControl" />
+  </AppPermissionRequests>
+</App>
